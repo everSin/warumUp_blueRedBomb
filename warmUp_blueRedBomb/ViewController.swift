@@ -12,7 +12,6 @@ class ViewController: UIViewController {
 
 	@IBOutlet weak var blueBomb: UIImageView!
 	@IBOutlet weak var redBomb: UIImageView!
-
 	
 	@IBAction func blueButton(sender: UIButton) {
 		
@@ -34,12 +33,12 @@ class ViewController: UIViewController {
 		if redBomb.hidden == false {
 			
 			redBomb.hidden = true
-			sender.setTitle("Show Blue Bomb", forState: UIControlState.Normal)
+			sender.setTitle("Show Red Bomb", forState: UIControlState.Normal)
 			
 		}else{
 			
 			redBomb.hidden = false
-			sender.setTitle("Hide Blue Bomb", forState: UIControlState.Normal)
+			sender.setTitle("Hide Red Bomb", forState: UIControlState.Normal)
 		
 			
 		}
